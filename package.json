@@ -1,0 +1,26 @@
+{
+  "name": "hexa.one",
+  "version": "1.0.0",
+  "description": "A simple NodeJS module to interact with [HEXA.ONE](https://hexa.one) endpoints.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsieler/hexaone-npm.git"
+  },
+  "author": "",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/jsieler/hexaone-npm/issues"
+  },
+  "homepage": "https://hexa.one",
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  }
+}
