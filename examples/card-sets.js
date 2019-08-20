@@ -1,7 +1,7 @@
 const fs = require('fs');
 const hexaone = require('../index.js'); // use require('hexa.one') in production
 
-const api = new hexaone('API_KEY');
+const api = new hexaone('API_KEY'); // <- Pur your API_KEY here.
 
 /*
   PLEASE NOTE: Running this methon can take some time because of large file for app_id 753 (~300mb).
