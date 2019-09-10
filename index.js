@@ -22,11 +22,15 @@ class hexaone {
     return await this.doRequest(`listings/${app_id}`);
   }
 
+  async getProfile(steam_id) {
+    return await this.doRequest(`profile/${steam_id}`);
+  }
+
   async getInventory(steam_id, app_id, context_id) {
     return await this.doRequest(`inventory/${steam_id}/${app_id}/${context_id}`);
   }
 
-  /* DEFAULT REQUEST HELPERS */
+  /* DEFAULT REQUEST HELPER */
   async doRequest(endpoint) {
     const response = await rp({
       uri: `https://api.hexa.one/${endpoint}?key=${this.key}`,
