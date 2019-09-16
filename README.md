@@ -31,7 +31,7 @@ api.getPrices(578080).then((response) => {
 });
 ```
 
-As of now you can use `api` object to interact with HEXA.ONE provided endpoints. 
+As of now you can use `api` object to interact with HEXA.ONE provided endpoints.
 For examples please check [examples](https://github.com/yaneony/hexaone-npm/tree/master/examples) folder.
 
 ## More
