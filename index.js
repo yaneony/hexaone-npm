@@ -1,4 +1,4 @@
-const rp = require('request-promise');
+const axios = require('axios');
 
 class hexaone {
   constructor(key) {
@@ -32,15 +32,15 @@ class hexaone {
 
   /* DEFAULT REQUEST HELPER */
   async doRequest(endpoint) {
-    const response = await rp({
-      uri: `https://api.hexa.one/${endpoint}?key=${this.key}`,
+    const response = await axios({
+      url: `https://api.hexa.one/${endpoint}?key=${this.key}`,
       method: 'GET',
       headers: {
         'User-Agent': 'HEXA.ONE NodeJS Package'
-      },
-      json: true,
+      }
     });
-    return response;
+
+    return response.data;
   }
 }
 
