@@ -13,7 +13,7 @@ $ npm i hexa.one
 In order to use all available endpoints by [HEXA.ONE](https://hexa.one) you will need an API_KEY. Check our Discord channel to learn how to get one.
 
 ## Endpoints
-# [GET] /currencies reponse:
+### [GET] /currencies reponse:
 ```	
 {
   "result": {
@@ -31,7 +31,7 @@ In order to use all available endpoints by [HEXA.ONE](https://hexa.one) you will
 }
 ```
 
-# [GET] /items/{app_id} reponse:
+### [GET] /items/{app_id} reponse:
 ```	
 {
   "result": {
@@ -184,7 +184,7 @@ In order to use all available endpoints by [HEXA.ONE](https://hexa.one) you will
 }
 ```
 
-# [GET] /prices/{app_id} reponse:
+### [GET] /prices/{app_id} reponse:
 ```	
 {
   "result": {
@@ -280,7 +280,7 @@ In order to use all available endpoints by [HEXA.ONE](https://hexa.one) you will
 }
 ```
 
-# [GET] /listings/{app_id} reponse:
+### [GET] /listings/{app_id} reponse:
 ```	
 {
   "result": {
@@ -317,7 +317,7 @@ In order to use all available endpoints by [HEXA.ONE](https://hexa.one) you will
 ```
 
 
-# [GET] /profile/{steam_id} reponse:
+### [GET] /profile/{steam_id} reponse:
 ```	
 {
   "result": {
@@ -375,7 +375,7 @@ In order to use all available endpoints by [HEXA.ONE](https://hexa.one) you will
 }
 ```
 
-# [GET] /inventory/{steam_id}/{app_id}/{context_id} reponse:
+### [GET] /inventory/{steam_id}/{app_id}/{context_id} reponse:
 ```	
 {
   "result": {
