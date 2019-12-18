@@ -1,6 +1,6 @@
 {
   "name": "hexa.one",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple NodeJS module to interact with [HEXA.ONE](https://hexa.one) endpoints.",
   "main": "index.js",
   "directories": {
