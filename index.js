@@ -6,8 +6,8 @@ class hexaone {
   }
 
   /* API ENDPOINTS */
-  async getCurrencies(app_id) {
-    return await this.doRequest(`currencies`);
+  async getCurrencies(currency_code) {
+    return await this.doRequest(`currencies/${currency_code}`);
   }
 
   async getItems(app_id) {
