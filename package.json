@@ -1,6 +1,6 @@
 {
   "name": "hexa.one",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A simple NodeJS module to interact with [HEXA.ONE](https://hexa.one) endpoints.",
   "main": "index.js",
   "directories": {
@@ -17,6 +17,6 @@
   },
   "homepage": "https://hexa.one",
   "dependencies": {
-    "axios": "^0.19.0"
+    "axios": "^0.19.2"
   }
 }
