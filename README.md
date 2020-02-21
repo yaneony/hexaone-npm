@@ -10,7 +10,7 @@ $ npm i hexa.one
 ```
 
 ## Usage
-In order to use all available endpoints by [HEXA.ONE](https://hexa.one) you will need an API_KEY. Check our Discord channel to learn how to get one.
+In order to use all available endpoints by [HEXA.ONE](https://hexa.one) you will need an API_KEY. Check [ACCOUNT](https://hexa.one/account) section on [HEXA.ONE](https://hexa.one) to get one.
 
 ## Response
 Our API is providing response as structured JSON. It is easy to read and to understand.
@@ -19,7 +19,12 @@ Our API is providing response as structured JSON. It is easy to read and to unde
 We use standard HTTP status codes, no additional or custom status codes are used. Check them on [Wikipedia](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) if required. 
 
 ## Endpoints
-### [GET] /market/currencies
+### [GET] /market/currencies/{CODE}
+Params:
+```
+{CODE} - currency code. Default: USD.
+```
+
 Reponse:
 ```json
 {
@@ -38,7 +43,12 @@ Reponse:
 }
 ```
 
-### [GET] /market/items/{app_id}
+### [GET] /market/items/{APP_ID}
+Params:
+```
+{APP_ID} - Steam Application ID code.
+```
+
 Reponse:
 ```json
 {
@@ -192,7 +202,12 @@ Reponse:
 }
 ```
 
-### [GET] /market/prices/{app_id}
+### [GET] /market/prices/{APP_ID}
+Params:
+```
+{APP_ID} - Steam Application ID code.
+```
+
 Reponse:
 ```json
 {
@@ -289,7 +304,12 @@ Reponse:
 }
 ```
 
-### [GET] /market/listings/{app_id}
+### [GET] /market/listings/{APP_ID}
+Params:
+```
+{APP_ID} - Steam Application ID code.
+```
+
 Reponse:
 ```json
 {
@@ -326,11 +346,12 @@ Reponse:
 }
 ```
 
+### [GET] /user/profile/{STEAM_ID}
+Params:
+```
+{STEAM_ID} - Steam ID in steamID64 format.
+```
 
-
-
-
-### [GET] /user/profile/{steam_id}
 Reponse:
 ```json
 {
@@ -389,7 +410,14 @@ Reponse:
 }
 ```
 
-### [GET] /user/inventory/{steam_id}/{app_id}/{context_id}
+### [GET] /user/inventory/{STEAM_ID}/{APP_ID}/{CONTEXT_ID}
+Params:
+```
+{STEAM_ID} - Steam ID in steamID64 format.
+{APP_ID} - Steam Application ID code.
+{CONTEXT_ID} - Context ID for given application inventory.
+```
+
 Reponse:
 ```json
 {
