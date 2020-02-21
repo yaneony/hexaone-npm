@@ -12,8 +12,14 @@ $ npm i hexa.one
 ## Usage
 In order to use all available endpoints by [HEXA.ONE](https://hexa.one) you will need an API_KEY. Check our Discord channel to learn how to get one.
 
+## Response
+Our API is providing response as structured JSON. It is easy to read and to understand.
+
+## Errors
+We use standard HTTP status codes, no additional or custom status codes are used. Check them on [Wikipedia](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) if required. 
+
 ## Endpoints
-### [GET] /currencies
+### [GET] /market/currencies
 Reponse:
 ```json
 {
@@ -32,7 +38,7 @@ Reponse:
 }
 ```
 
-### [GET] /items/{app_id}
+### [GET] /market/items/{app_id}
 Reponse:
 ```json
 {
@@ -186,7 +192,7 @@ Reponse:
 }
 ```
 
-### [GET] /prices/{app_id}
+### [GET] /market/prices/{app_id}
 Reponse:
 ```json
 {
@@ -283,7 +289,7 @@ Reponse:
 }
 ```
 
-### [GET] /listings/{app_id}
+### [GET] /market/listings/{app_id}
 Reponse:
 ```json
 {
@@ -320,7 +326,11 @@ Reponse:
 }
 ```
 
-### [GET] /profile/{steam_id}
+
+
+
+
+### [GET] /user/profile/{steam_id}
 Reponse:
 ```json
 {
@@ -379,7 +389,7 @@ Reponse:
 }
 ```
 
-### [GET] /inventory/{steam_id}/{app_id}/{context_id}
+### [GET] /user/inventory/{steam_id}/{app_id}/{context_id}
 Reponse:
 ```json
 {
@@ -536,8 +546,8 @@ Reponse:
 ## Example Code
 
 ```javascript
-const hexaone = require('./index.js');
-const api = new hexaone('API_KEY');
+const hexaone = require('../index.js'); // use require('hexa.one') in production
+const api = new hexaone('API_KEY'); // <- Pur your API_KEY here.
 
 setImmediate(async () => {
   const response = await api.getPrices(578080);
