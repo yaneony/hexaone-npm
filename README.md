@@ -12,11 +12,18 @@ $ npm i hexa.one
 ## Usage
 In order to use all available endpoints by [HEXA.ONE](https://hexa.one) you will need an API_KEY. Check [ACCOUNT](https://hexa.one/account) section on [HEXA.ONE](https://hexa.one) to get one.
 
+## Browser
+In case you want to check how the response looks like, we recommend to use [Mozilla Firefox](https://www.mozilla.org/firefox/new) browser or [Google Chrome](https://chrome.google.com) with [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa) extension to see structured JSON which is then easy to read.
+
+## Request
+All requests are pointed to `https://api.hexa.one/{endpoint}?key={key}` where `{endpoint}` is URL from the list below, and `{key}` is your API Key you've got before from our website. As simple example, prices for CS:GO will be available under `https://api.hexa.one/prices/730?key=AABBCCDD`.
+
 ## Response
 Our API is providing response as structured JSON. It is easy to read and to understand.
 
 ## Errors
 We use standard HTTP status codes, no additional or custom status codes are used. Check them on [Wikipedia](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) if required. 
+
 
 ## Endpoints
 ### [GET] /market/currencies/{CODE}
